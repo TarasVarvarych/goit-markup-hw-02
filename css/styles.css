@@ -6,15 +6,15 @@
     --section-color: #F5F4FA;
     --text-color:#757575;
     --title-color: #212121;
+    --button-active: #188CE8; 
+    --adress-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
     color: var(--text-color);
+    background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
-line-height: 1.71;
 letter-spacing: 0.03em;
 
 }
@@ -54,7 +54,8 @@ color: var(--title-color);
 .current {color:var(--brand-color)}
 
 .contact {
-    color: var(--text-color)
+    color: var(--text-color);
+    line-height: 1.14;
 }
 
 .list {
@@ -69,7 +70,7 @@ color: var(--title-color);
     color: var(--white-color);
     font-weight: 900;
 font-size: 44px;
-line-height: 1.16;
+line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -87,16 +88,42 @@ letter-spacing: 0.06em;
 cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--button-active);
+}
+
 .advantage {
     color: var(--title-color);
+    font-size: inherit;
     font-weight: 700;
 line-height: 1.14;
 text-transform: uppercase;
 
 }
 
-.job,
+.text {
+
+    font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+
+
+}
+
 .team {
+    background-color: var(--section-color);
+}
+
+.team li {
+background-color: var(--white-color);
+
+}
+
+.job,
+.team-title {
+ 
     color: var(--title-color);
     font-weight: 700;
 font-size: 36px;
@@ -127,15 +154,19 @@ line-height: 1.19;
 }
 
 .footer .logo {
-    color: var(--white-color);
+    color: var(--white-color)
 }
 
 .adress.map {
     color: var(--white-color);
+    line-height: 1.71;
 }
 
 .adress {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--adress-color);
+line-height: 1.71;
+
+
 }
 
 .filter-button {
@@ -144,11 +175,12 @@ line-height: 1.19;
     font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 1,63;
+line-height: 1.63;
+letter-spacing: 0.03em;
 text-align: center;
 color: var(--title-color);
 background-color: var(--section-color);
-cursor: pointer;
+cursor: pointer; 
 }
 
 .filter-button:hover,
